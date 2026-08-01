@@ -12,16 +12,18 @@ The datasets include behavioural observations collected through direct field obs
 
 ## Dataset contents
 
-This repository contains the following Excel files:
+This repository contains two datasets of macropod behavioural responses to drone surveys:
 
-| File                      | Description                                                                             |
-| ------------------------- | --------------------------------------------------------------------------------------- |
-| `field_observations.xlsx` | Raw field observations of macropod behavioural responses recorded during drone surveys. |
-| `video_observations.xlsx` | Raw behavioural observations extracted from video recordings of drone surveys.          |
+| File                      | Description                                                                                                                                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `field_observations.xlsx` | Behavioural responses recorded during direct field observations of macropods during drone flights.     |
+| `video_observations.xlsx` | Behavioural responses recorded from video footage collected during drone flights. |
 
 ## Data structure
 
-The observation datasets contain records of individual or group-level behavioural responses to drone flights. The main variables include:
+### Field observations dataset
+
+The field observations dataset contains behavioural observations recorded during drone surveys. The variables include:
 
 | Variable     | Description                                                 |
 | ------------ | ----------------------------------------------------------- |
@@ -40,7 +42,25 @@ The observation datasets contain records of individual or group-level behavioura
 | Study site   | Study site identifier                                       |
 | Species      | Species identity                                            |
 
-Each Excel file also includes summary tables generated from the observations, including total response counts and standard errors across different drone flight altitudes.
+The Excel file also includes summary tables of behavioural response counts and standard errors across different drone flight altitudes.
+
+### Video observations dataset
+
+The video observations dataset contains behavioural observations extracted from drone survey videos. The variables include:
+
+| Variable               | Description                                          |
+| ---------------------- | ---------------------------------------------------- |
+| Date                   | Date of observation                                  |
+| Time                   | Time of observation                                  |
+| Altitude (m)           | Drone flight altitude above ground level             |
+| Noise level (dB)       | Recorded drone noise level at each altitude          |
+| No. of animal observed | Number of animals observed in the video recording    |
+| Still                  | Number of observations classified as remaining still |
+| Fled                   | Number of observations classified as fleeing         |
+| Study site             | Study site identifier                                |
+| Species                | Species identity                                     |
+
+The Excel file also includes summary tables of behavioural response counts across different drone flight altitudes.
 
 ## Repository structure
 
